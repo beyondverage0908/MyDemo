@@ -15,7 +15,7 @@
 		95F5C28A1CD2473A0083E6C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95F5C2881CD2473A0083E6C4 /* LaunchScreen.storyboard */; };
 		95F5C2951CD2473B0083E6C4 /* CornerRadiusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F5C2941CD2473B0083E6C4 /* CornerRadiusTests.m */; };
 		95F5C2A01CD2473B0083E6C4 /* CornerRadiusUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F5C29F1CD2473B0083E6C4 /* CornerRadiusUITests.m */; };
-		95F5C2B11CD24DC80083E6C4 /* DrCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F5C2B01CD24DC80083E6C4 /* DrCorner.m */; };
+		95F5C2B51CD474E70083E6C4 /* DrCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F5C2B41CD474E70083E6C4 /* DrCorner.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,8 @@
 		95F5C29B1CD2473B0083E6C4 /* CornerRadiusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CornerRadiusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F5C29F1CD2473B0083E6C4 /* CornerRadiusUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CornerRadiusUITests.m; sourceTree = "<group>"; };
 		95F5C2A11CD2473B0083E6C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		95F5C2AF1CD24DC80083E6C4 /* DrCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrCorner.h; sourceTree = "<group>"; };
-		95F5C2B01CD24DC80083E6C4 /* DrCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrCorner.m; sourceTree = "<group>"; };
+		95F5C2B31CD474E70083E6C4 /* DrCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrCorner.h; sourceTree = "<group>"; };
+		95F5C2B41CD474E70083E6C4 /* DrCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrCorner.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +104,7 @@
 		95F5C2791CD2473A0083E6C4 /* CornerRadius */ = {
 			isa = PBXGroup;
 			children = (
-				95F5C2AD1CD24CBE0083E6C4 /* Corner */,
+				95F5C2B21CD474E70083E6C4 /* DRCorner */,
 				95F5C27D1CD2473A0083E6C4 /* AppDelegate.h */,
 				95F5C27E1CD2473A0083E6C4 /* AppDelegate.m */,
 				95F5C2801CD2473A0083E6C4 /* ViewController.h */,
@@ -144,13 +144,13 @@
 			path = CornerRadiusUITests;
 			sourceTree = "<group>";
 		};
-		95F5C2AD1CD24CBE0083E6C4 /* Corner */ = {
+		95F5C2B21CD474E70083E6C4 /* DRCorner */ = {
 			isa = PBXGroup;
 			children = (
-				95F5C2AF1CD24DC80083E6C4 /* DrCorner.h */,
-				95F5C2B01CD24DC80083E6C4 /* DrCorner.m */,
+				95F5C2B31CD474E70083E6C4 /* DrCorner.h */,
+				95F5C2B41CD474E70083E6C4 /* DrCorner.m */,
 			);
-			name = Corner;
+			path = DRCorner;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,7 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95F5C2B11CD24DC80083E6C4 /* DrCorner.m in Sources */,
+				95F5C2B51CD474E70083E6C4 /* DrCorner.m in Sources */,
 				95F5C2821CD2473A0083E6C4 /* ViewController.m in Sources */,
 				95F5C27F1CD2473A0083E6C4 /* AppDelegate.m in Sources */,
 				95F5C27C1CD2473A0083E6C4 /* main.m in Sources */,
@@ -510,6 +510,7 @@
 				95F5C2A61CD2473B0083E6C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		95F5C2A71CD2473B0083E6C4 /* Build configuration list for PBXNativeTarget "CornerRadiusTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +519,7 @@
 				95F5C2A91CD2473B0083E6C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		95F5C2AA1CD2473B0083E6C4 /* Build configuration list for PBXNativeTarget "CornerRadiusUITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +528,7 @@
 				95F5C2AC1CD2473B0083E6C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
