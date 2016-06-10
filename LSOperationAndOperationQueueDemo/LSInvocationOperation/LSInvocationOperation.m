@@ -29,6 +29,9 @@
 //    invoOpt4.queuePriority = NSOperationQueuePriorityVeryLow;
 //    invoOpt2.queuePriority = NSOperationQueuePriorityHigh;
     
+    [invoOpt2 setQualityOfService:NSQualityOfServiceUserInitiated];
+    [invoOpt2 setCompletionBlock:nil];
+    
     // 设置依赖 - 线性执行
     [invoOpt1 addDependency:invoOpt2];
     [invoOpt2 addDependency:invoOpt4];

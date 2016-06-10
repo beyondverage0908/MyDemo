@@ -19,6 +19,8 @@
 		95F6821B1D06EC28008DC12F /* LSInvocationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F6821A1D06EC28008DC12F /* LSInvocationOperation.m */; };
 		95F6821D1D06EE73008DC12F /* LSInvocationOperationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F6821C1D06EE73008DC12F /* LSInvocationOperationTest.m */; };
 		95F682211D06EF5B008DC12F /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F682201D06EF5B008DC12F /* Person.m */; };
+		95F682801D099E92008DC12F /* LSNonConcurrentOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F6827F1D099E92008DC12F /* LSNonConcurrentOperation.m */; };
+		95F682821D09AA27008DC12F /* LSNonConcurrentOperationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F682811D09AA27008DC12F /* LSNonConcurrentOperationTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		95F6821C1D06EE73008DC12F /* LSInvocationOperationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSInvocationOperationTest.m; sourceTree = "<group>"; };
 		95F6821F1D06EF5B008DC12F /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		95F682201D06EF5B008DC12F /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		95F6827E1D099E92008DC12F /* LSNonConcurrentOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSNonConcurrentOperation.h; sourceTree = "<group>"; };
+		95F6827F1D099E92008DC12F /* LSNonConcurrentOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSNonConcurrentOperation.m; sourceTree = "<group>"; };
+		95F682811D09AA27008DC12F /* LSNonConcurrentOperationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSNonConcurrentOperationTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				95F6821E1D06EF48008DC12F /* Other */,
+				95F6827D1D099E4D008DC12F /* LSConcurrentOperation */,
+				95F6827C1D099E2B008DC12F /* LSNonConcurrentOperation */,
 				95F682121D06C81E008DC12F /* LSBlockOperation */,
 				95F682131D06C81E008DC12F /* LSInvocationOperation */,
 				95F681EC1D06C7B1008DC12F /* LSOperationAndOperationQueueDemo */,
@@ -121,6 +128,7 @@
 		95F682061D06C7B1008DC12F /* LSOperationAndOperationQueueDemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				95F682811D09AA27008DC12F /* LSNonConcurrentOperationTest.m */,
 				95F682171D06CB07008DC12F /* LSBlockOperationTest.m */,
 				95F6821C1D06EE73008DC12F /* LSInvocationOperationTest.m */,
 				95F682071D06C7B1008DC12F /* LSOperationAndOperationQueueDemoTests.m */,
@@ -154,6 +162,22 @@
 				95F682201D06EF5B008DC12F /* Person.m */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		95F6827C1D099E2B008DC12F /* LSNonConcurrentOperation */ = {
+			isa = PBXGroup;
+			children = (
+				95F6827E1D099E92008DC12F /* LSNonConcurrentOperation.h */,
+				95F6827F1D099E92008DC12F /* LSNonConcurrentOperation.m */,
+			);
+			path = LSNonConcurrentOperation;
+			sourceTree = "<group>";
+		};
+		95F6827D1D099E4D008DC12F /* LSConcurrentOperation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LSConcurrentOperation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +285,7 @@
 				95F681F51D06C7B1008DC12F /* ViewController.m in Sources */,
 				95F681F21D06C7B1008DC12F /* AppDelegate.m in Sources */,
 				95F6821B1D06EC28008DC12F /* LSInvocationOperation.m in Sources */,
+				95F682801D099E92008DC12F /* LSNonConcurrentOperation.m in Sources */,
 				95F681EF1D06C7B1008DC12F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +297,7 @@
 				95F682181D06CB07008DC12F /* LSBlockOperationTest.m in Sources */,
 				95F6821D1D06EE73008DC12F /* LSInvocationOperationTest.m in Sources */,
 				95F682081D06C7B1008DC12F /* LSOperationAndOperationQueueDemoTests.m in Sources */,
+				95F682821D09AA27008DC12F /* LSNonConcurrentOperationTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,7 +420,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LSOperationAndOperationQueueDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ihefe.LSOperationAndOperationQueueDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -406,7 +432,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LSOperationAndOperationQueueDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ihefe.LSOperationAndOperationQueueDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -456,6 +482,7 @@
 				95F6820E1D06C7B1008DC12F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		95F6820F1D06C7B1008DC12F /* Build configuration list for PBXNativeTarget "LSOperationAndOperationQueueDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +491,7 @@
 				95F682111D06C7B1008DC12F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
