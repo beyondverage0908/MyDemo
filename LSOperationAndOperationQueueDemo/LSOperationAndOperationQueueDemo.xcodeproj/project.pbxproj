@@ -21,6 +21,7 @@
 		95F682211D06EF5B008DC12F /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F682201D06EF5B008DC12F /* Person.m */; };
 		95F682801D099E92008DC12F /* LSNonConcurrentOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F6827F1D099E92008DC12F /* LSNonConcurrentOperation.m */; };
 		95F682821D09AA27008DC12F /* LSNonConcurrentOperationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F682811D09AA27008DC12F /* LSNonConcurrentOperationTest.m */; };
+		95F682841D0A9BF9008DC12F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 95F682831D0A9BF8008DC12F /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		95F6827E1D099E92008DC12F /* LSNonConcurrentOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSNonConcurrentOperation.h; sourceTree = "<group>"; };
 		95F6827F1D099E92008DC12F /* LSNonConcurrentOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSNonConcurrentOperation.m; sourceTree = "<group>"; };
 		95F682811D09AA27008DC12F /* LSNonConcurrentOperationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSNonConcurrentOperationTest.m; sourceTree = "<group>"; };
+		95F682831D0A9BF8008DC12F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				95F681EC1D06C7B1008DC12F /* LSOperationAndOperationQueueDemo */,
 				95F682061D06C7B1008DC12F /* LSOperationAndOperationQueueDemoTests */,
 				95F681EB1D06C7B1008DC12F /* Products */,
+				95F682831D0A9BF8008DC12F /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -287,6 +290,7 @@
 				95F6821B1D06EC28008DC12F /* LSInvocationOperation.m in Sources */,
 				95F682801D099E92008DC12F /* LSNonConcurrentOperation.m in Sources */,
 				95F681EF1D06C7B1008DC12F /* main.m in Sources */,
+				95F682841D0A9BF9008DC12F /* README.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
